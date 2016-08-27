@@ -1,0 +1,104 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false"  %>
+<%@ Register TagPrefix="asp" Namespace="AjaxControlToolkit" Assembly="AjaxControlToolkit"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head runat="server">
+    <title></title>    
+    <link href="Styles/Productivity.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="Styles/ProductivityPrint.css" rel="stylesheet" type="text/css" media="print" />
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+
+<body>
+    <form runat="server">
+    
+    <div class="page">
+    <asp:ToolkitScriptManager ID="ToolkitScriptManager1" runat="server" ViewStateMode="Disabled">  
+    </asp:ToolkitScriptManager>  
+
+        <div class="header">
+            <div class="title">
+                <h1>
+                   Walgreens Nazareth RFC Productivity
+                </h1>
+            </div>
+            <div class="loginDisplay">
+                <asp:LoginView ID="HeadLoginView" runat="server" EnableViewState="false">
+                    <AnonymousTemplate>
+                        [ <a href="" ID="HeadLoginStatus" runat="server">Log In</a> ]
+                    </AnonymousTemplate>
+                    <LoggedInTemplate>
+                        Welcome <asp:LoginName ID="HeadLoginName" runat="server" />!
+                        
+                    </LoggedInTemplate>
+                </asp:LoginView>
+            </div>
+            <div class="clear hideSkiplink">
+                <asp:Menu ID="NavigationMenu" runat="server" CssClass="menu" EnableViewState="false" IncludeStyleBlock="false" Orientation="Horizontal">
+                    <Items>
+                        <asp:MenuItem NavigateUrl="~/Default.aspx" Text="Home"/>
+                        <asp:MenuItem NavigateUrl="~/FCP.aspx" Text="Full Case Pick" 
+                            ToolTip="Full Case Pick">
+                            <asp:MenuItem NavigateUrl="~/FCP/1st/Shift.aspx" Text="1st Shift" 
+                                Value="1"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/FCP/2nd/Shift.aspx" Text="2nd Shift" 
+                                Value="2"></asp:MenuItem>
+                                
+                            <asp:MenuItem NavigateUrl="~/FCP/EditFunct.aspx" Text="Functions" 
+                                Value="EditFunctions"></asp:MenuItem>
+                        </asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/FCS.aspx" Text="Full Case Stock" 
+                            ToolTip="Full Case Stock">
+                            <asp:MenuItem NavigateUrl="~/FCS/1st/Shift.aspx" Text="1st Shift" 
+                                Value="1"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/FCS/2nd/Shift.aspx" Text="2nd Shift" 
+                                Value="2"></asp:MenuItem>
+                              
+                            <asp:MenuItem NavigateUrl="~/FCS/EditFunct.aspx" Text="Functions" 
+                                Value="EditFunctions"></asp:MenuItem>
+                        </asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/REC.aspx" Text="Receiving" ToolTip="Receiving">
+                            <asp:MenuItem NavigateUrl="~/REC/1st/Shift.aspx" Text="1st Shift" 
+                                Value="1"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/REC/2nd/Shift.aspx" Text="2nd Shift" 
+                                Value="2"></asp:MenuItem>
+                        
+                            <asp:MenuItem NavigateUrl="~/REC/EditFunct.aspx" Text="Functions" 
+                                Value="EditFunctions"></asp:MenuItem>
+                        </asp:MenuItem>
+
+
+                       
+                        <asp:MenuItem NavigateUrl="~/SHIP.aspx" Text="Shipping" ToolTip="Shipping">
+                            <asp:MenuItem NavigateUrl="~/SHIP/1st/Shift.aspx" Text="1st Shift" 
+                                Value="1"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/SHIP/2nd/Shift.aspx" Text="2nd Shift" 
+                                Value="2"></asp:MenuItem>
+                             
+                            <asp:MenuItem NavigateUrl="~/SHIP/EditFunct.aspx" Text="Functions" 
+                                Value="EditFunction"></asp:MenuItem>
+                        </asp:MenuItem>
+                                                <asp:MenuItem NavigateUrl="~/Utility.aspx" Text="Utility" Value="Utility" 
+                            ToolTip="Utility" Enabled="false">
+                            <asp:MenuItem Text="1st Shift" Value="1" NavigateUrl="~/Utility/1st/Shift.aspx"></asp:MenuItem>
+                            <asp:MenuItem Text="2nd Shift" Value="2"></asp:MenuItem>
+                            <asp:MenuItem Text="3rd Shift" Value="3" NavigateUrl="~/Utility/3rd/Shift.aspx"></asp:MenuItem>
+                        </asp:MenuItem>
+                     
+
+                      
+                    </Items>
+                </asp:Menu>
+            </div>
+        </div>
+        <div class="main">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server"/>
+    
+        </div>
+       
+    </div>
+   
+    </form>
+</body>
+</html>

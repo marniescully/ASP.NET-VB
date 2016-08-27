@@ -1,0 +1,315 @@
+﻿
+  /* DEFAULTS
+----------------------------------------------------------*/
+
+body
+{
+   
+    font-size: medium;
+    font-family: "Trebuchet MS" , "Helvetica Neue" , "Lucida Grande" , "Segoe UI" , Arial, Helvetica, Verdana, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    color: #000000;
+}
+
+
+/* HEADINGS   
+----------------------------------------------------------*/
+
+h1, h2, h3, h4, h5, h6
+{
+    
+    font-variant: small-caps;
+    
+    
+}
+
+h1
+{
+    font-size: 1.6em;
+
+}
+
+h2
+{
+    font-size: 1.4em;
+    color: #E01935;
+}
+
+h3
+{
+    font-size: 1.2em;
+}
+
+h4
+{
+    font-size: 1.1em;
+}
+
+h5, h6
+{
+    font-size: 1em;
+}
+
+
+/* PRIMARY LAYOUT ELEMENTS   
+----------------------------------------------------------*/
+
+.page
+{
+    
+    margin: 0px auto;
+}
+
+.header
+{
+    display:none;}
+
+.main
+{
+    padding: 20px 12px;
+    margin: 0px 8px 8px 8px;
+    
+   
+}
+.main h2
+{
+    margin-top: -5px;
+}
+
+#LeftColumn /* This is all grids listing Data and TMs */
+{
+  width: 95%;
+ vertical-align:top;
+}
+
+
+
+#LeftColumn H6
+{
+    text-align: right;
+    margin-bottom: 5px;
+}
+
+#LeftColumn Table
+{
+    margin-bottom: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+
+#LeftColumn TH
+{
+   
+    padding: 3px;
+}
+
+
+#LeftColumn TD
+{
+     width:10%;
+}
+
+#LeftColumn TD:first-child
+{
+    text-align: left;
+    padding-left: 2px;
+    width:18%;
+}
+
+
+#Form /* This is used with Edit Productivity */
+{
+    width: 75%;
+}
+
+.Form Table
+{
+    width: 100%;
+    text-align: left;
+    margin-top: 5px;
+    border: 1px;
+}
+
+.Form TH
+{
+    padding: 5px 5px;
+    text-align: left;
+    width: 20%;
+}
+
+
+.Form TD:first-child
+{
+    font-weight: bold;
+    width: 25%;
+}
+
+.Form TD
+{
+    padding: 5px 5px;
+  
+}
+
+
+.SmallForm Table /* This is Add & Edit TM forms */
+{
+    width: 100%;
+    text-align: left;
+    margin-top: 5px;
+    border: 1px;
+}
+
+.SmallForm TD:first-child
+{
+    font-weight: bold;
+    width: 15%;
+}
+
+.SmallForm TD
+{
+    padding: 5px 5px;
+    
+}
+
+
+
+/* MISC  
+----------------------------------------------------------*/
+.bold
+{
+    font-weight: bold;
+}
+
+.clear
+{
+    clear: both;
+}
+
+.title
+{
+    display: block;
+    float: left;
+    text-align: left;
+    width: auto;
+}
+
+
+.StrongEmphasis
+{
+    font-weight: bold;
+    font-style: italic;
+}
+
+#SearchReports{display:none;}
+
+.left
+{
+    text-align: left;
+    font-size: 1.1em;
+  
+}
+
+.right
+{
+    text-align: right;
+}
+
+.floatRight
+{
+    float: right;
+    margin-right:10px;
+}
+
+.floatLeft
+{
+    float: left;
+}
+
+
+/*Lists*/
+
+.Lists /* This is used on the home page */
+{
+    border-top: 1px dashed #496077;
+}
+
+.Lists ul li:first-child
+{
+    margin-top: -15px;
+}
+
+.Tutorial li
+{
+    margin-top: 20px;
+}
+
+.Tutorial img
+{
+    margin-top: 10px;
+}
+
+
+/*Reports*/
+
+/* TM Reports within the All Panel
+----------------------------------------------------------*/
+.AllRepeat
+{
+    
+    font-size: .95em;
+    text-align: center;
+}
+
+.AllRepeat Table
+{
+  width: 100%;
+  
+ }
+
+
+.DistFunctTable TH
+{
+    border-right: 1px;
+    border-left: 1px;
+}
+
+.DistFunctTable TD:first-child
+{
+    text-align: left;
+    padding-left: 2px;
+    width:20%;
+    
+}
+
+.Dates
+ {
+     Width:100px;
+ }
+
+.negMarg
+{
+    margin-bottom:-2px ;
+}
+
+.floatRight
+{display:none;
+    
+    }
+
+
+
+#sideNav
+{
+ visibility:hidden;}
+ 
+.PageBreak 
+{
+    page-break-after:always;
+   
+  }
+  
+  .AvoidPageBreak{page-break-inside:avoid;}
+  
+  

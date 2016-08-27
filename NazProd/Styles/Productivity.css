@@ -1,0 +1,594 @@
+﻿/* DEFAULTS
+----------------------------------------------------------*/
+
+body
+{
+    background: #ECECEC url('../Images/main_background.png') repeat-y scroll center center;
+    font-size: small;
+    font-family: "Trebuchet MS" , "Helvetica Neue" , "Lucida Grande" , "Segoe UI" , Arial, Helvetica, Verdana, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    color: #696969;
+}
+
+a:link, a:visited
+{
+    color: #E01935;
+    text-decoration: none;
+}
+
+a:hover
+{
+    color: #E01935;
+    text-decoration: underline;
+}
+
+a:active
+{
+    color: #E01935;
+}
+
+
+/* HEADINGS   
+----------------------------------------------------------*/
+
+h1, h2, h3, h4, h5, h6
+{
+    color: #666666;
+    font-variant: small-caps;
+    text-transform: none;
+    font-weight: 200;
+}
+
+h1
+{
+    font-size: 1.6em;
+    font-weight: 600;
+}
+
+h2
+{
+    font-size: 1.4em;
+    font-weight: 500;
+    color: #E01935;
+}
+
+h3
+{
+    font-size: 1.2em;
+}
+
+h4
+{
+    font-size: 1.1em;
+}
+
+h5, h6
+{
+    font-size: 1em;
+}
+
+
+/* PRIMARY LAYOUT ELEMENTS   
+----------------------------------------------------------*/
+
+.page
+{
+    width: 960px;
+    background-color: #fff;
+    margin: 0px auto;
+}
+
+.header
+{
+    position: relative;
+    background-color: #ffffff;
+    margin: 10px 8px 8px 8px;
+    border: 1px solid #496077;
+    padding-top: 5px;
+}
+
+.header h1
+{
+    color: #E01935;
+    font-size: 2em;
+    margin-left: 10px;
+}
+
+.main
+{
+    padding: 20px 12px;
+    margin: 0px 8px 8px 8px;
+    min-height: 675px;
+    border: 1px solid #496077;
+}
+.main h2
+{
+    margin-top: -5px;
+}
+
+#LeftColumn /* This is all grids listing Data and TMs */
+{
+    width: 75%;
+
+}
+
+#LeftColumn H6
+{
+    text-align: right;
+    color: #808080;
+    margin-bottom: 5px;
+}
+
+#LeftColumn Table
+{
+    margin-bottom: 10px;
+    width: 100%;
+    text-align: center;
+    border: 0px;
+}
+
+
+#LeftColumn TH
+{
+    color: #ffffff;
+    background-color: #808080;
+    padding: 3px;
+}
+
+#LeftColumn TH a
+{
+    color: #ffffff;
+}
+
+#LeftColumn TH:first-child
+{
+    color: #808080;
+}
+
+#LeftColumn TD
+{
+    width: 12%;
+    padding: 3px 3px;
+}
+
+#LeftColumn TD:first-child
+{
+    font-weight: bold;
+    text-align: left;
+    width: 17%;
+}
+
+
+#LeftColumn TR:nth-child(odd)
+{
+    background-color: #ffffff;
+}
+
+#LeftColumn TR:nth-child(Even)
+{
+    background-color: #f2f2f2;
+}
+
+
+#sideNav
+{
+    float: right;
+    width: 200px;
+    border-left: 1px solid gray;
+    min-height: 450px;
+   
+}
+
+#sideNav H2
+{
+    margin-left: 5px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+#sideNav H3
+{
+   
+    margin: 0px 5px;
+    padding: 2px 2px 2px 8px;
+    color: #ffffff;
+    background-color: #808080;
+}
+
+#sideNav H5
+{
+    color: #4F4F4F;
+    margin: 20px 0px 0px 4px;
+    padding: 0px;
+}
+
+#sideNav ul
+{
+    list-style-type: none;
+    margin: 0px 0px 25px 20px;
+    padding: 0px;
+}
+
+#sideNav li
+{
+    list-style-type: none;
+    margin: 5px 0px;
+    padding: 0px;
+}
+
+#HeadDate
+{
+    margin-left: 8px;
+}
+
+#HeadDate input
+{
+    margin-bottom: 20px;
+}
+
+
+#Form /* This is used with Edit Productivity */
+{
+    width: 75%;
+}
+
+.Form Table
+{
+    width: 100%;
+    border-color: #808080;
+    background-color: #fff;
+    text-align: left;
+    margin-top: 5px;
+    border: 1px;
+}
+
+.Form TH
+{
+    color: #ffffff;
+    background-color: #808080;
+    border-color: #f2f2f2;
+    border-right: 0px;
+    border-left: 0px;
+    padding: 5px 5px;
+    text-align: left;
+    width: 20%;
+}
+
+
+.Form TD:first-child
+{
+    font-weight: bold;
+    width: 25%;
+}
+
+.Form TD
+{
+    padding: 5px 5px;
+    border: 0px;
+}
+
+
+.SmallForm Table /* This is Add & Edit TM forms */
+{
+    width: 100%;
+    border-color: #808080;
+    background-color: #f1f1f1;
+    text-align: left;
+    margin-top: 5px;
+    border: 1px;
+}
+.SmallForm TD
+{
+    padding: 5px 5px;
+    border: 0px;
+}
+.SmallForm TD:first-child
+{
+    font-weight: bold;
+    width: 15%;
+}
+
+
+
+
+/* TAB MENU   
+----------------------------------------------------------*/
+
+div.hideSkiplink
+{
+    background-color: #fff;
+    width: 100%;
+    border-bottom-style: solid;
+    border-bottom-width: 10px;
+    border-bottom-color: #4F4F4F;
+    margin-top: -10px;
+}
+
+div.menu
+{
+    padding: 4px 0px 0px 8px;
+}
+
+div.menu ul
+{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    width: auto;
+}
+
+div.menu ul li a, div.menu ul li a:visited
+{
+    background-color: #808080;
+    border: 1px solid #4F4F4F;
+    color: #F4F4F4;
+    display: block;
+    line-height: 1.35em;
+    padding: 4px 20px;
+    text-decoration: none;
+    white-space: nowrap;
+    z-index: 1;
+}
+
+div.menu ul li a:hover
+{
+    background-color: #C0C0C0;
+    color: #E01935;
+    text-decoration: none;
+}
+
+div.menu ul li a:active
+{
+    background-color: #4F4F4F;
+    color: #F4F4F4;
+    text-decoration: none;
+}
+
+
+/* Login  
+----------------------------------------------------------*/
+
+.loginDisplay
+{
+    display: block;
+    text-align: right;
+    margin: 5px 10px 0px 0px;
+    color: #E01935;
+}
+
+
+/* MISC  
+----------------------------------------------------------*/
+.bold
+{
+    font-weight: bold;
+}
+
+.clear
+{
+    clear: both;
+}
+
+.title
+{
+    display: block;
+    float: left;
+    text-align: left;
+    width: auto;
+}
+
+.Red
+{
+    color: #E01935;
+}
+
+.StrongEmphasis
+{
+    font-weight: bold;
+    font-style: italic;
+}
+
+#SearchReports
+{
+    clear: right;
+    margin: 30px 0px;
+}
+
+.left
+{
+    text-align: left;
+    font-size: 1.1em;
+    font-weight: 600;
+}
+
+.right
+{
+    text-align: right;
+}
+
+.floatRight
+{
+    float: right;
+    margin-right: 10px;
+}
+
+.floatLeft
+{
+    float: left;
+}
+
+
+/*Lists*/
+
+.Lists /* This is used on the home page */
+{
+    border-bottom: 1px dashed #496077;
+}
+
+.Lists ul li:first-child
+{
+    margin-top: -15px;
+}
+
+.Tutorial li
+{
+    margin-top: 20px;
+}
+.Tutorial img
+{
+    margin-top: 10px;
+}
+
+
+/* buttons----------------------------------------------------------*/
+
+#Search a /* These are the buttons on the Import Productivity pages*/
+{
+    background-color: #E01935;
+    color: White;
+    padding: 1px 5px;
+    vertical-align: top;
+}
+
+.SearchTM /* These are the buttons on the Shift, and Team Members page*/
+{
+    float: right;
+    width: 200px;
+    padding: 0px;
+    border-left: 0px solid gray;
+    min-height: 350px;
+    text-align:left;
+}
+
+#SearchTM /* These are the buttons on the Shift, and Team Members page*/
+{
+       border-left: 1px solid gray;
+ 
+}
+
+.SearchTM H3
+{
+   
+    margin: 0px 5px;
+    padding: 2px 2px 2px 8px;
+    color: #ffffff;
+    background-color: #808080;
+}
+
+.SearchTM a 
+{
+    background-color: #E01935;
+    color: White;
+    padding: 1px 5px;
+    vertical-align: top;
+    
+    
+}
+
+.SearchTM ul
+{
+    list-style-type: none;
+    margin: 10px 0px 25px 10px;
+    
+}
+
+.SearchTM li
+{
+    list-style-type: none;
+    margin: 2px 0px;
+   
+}
+
+
+
+
+#SearchReports a /* These are the buttons on the Import Productivity and Team Members page*/
+{
+    background-color: #E01935;
+    color: White;
+    padding: 1px 5px;
+    vertical-align: top;
+    margin-bottom: 10px;
+}
+
+
+.EditButtons input /* These are the buttons on the Edit Productivity form*/
+{
+    background-color: #E01935;
+    color: White;
+    padding: 3px;
+    vertical-align: text-top;
+    border: 0px;
+}
+
+
+
+/*Reports*/
+
+/* TM Reports within the All Panel
+----------------------------------------------------------*/
+.AllRepeat
+{
+    width: 84%;
+    font-size: .95em;
+    text-align: center;
+}
+
+.AllRepeat Table
+{
+    width: 100%;
+}
+
+
+.DistFunctTable table
+{
+    border-color: #808080;
+    width: 100%;
+    background-color: #808080;
+}
+
+.DistFunctTable TH
+{
+    color: #ffffff;
+    background-color: #808080;
+    border-right: 1px;
+    border-left: 1px;
+}
+
+.DistFunctTable TD:first-child
+{
+    font-weight: bold;
+    text-align: left;
+    padding-left: 2px;
+    width: 20%;
+}
+
+
+
+.DistFunctTable TR:nth-child(odd)
+{
+    background-color: #ffffff;
+}
+
+.DistFunctTable TR:nth-child(Even)
+{
+    background-color: #f2f2f2;
+}
+
+.Dates
+{
+    width: 100px;
+}
+
+.negMarg
+{
+    margin-bottom: -2px;
+}
+
+.hidden
+{
+    visibility: hidden;
+}
+
+
